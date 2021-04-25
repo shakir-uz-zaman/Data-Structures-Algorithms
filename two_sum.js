@@ -2,13 +2,14 @@
 
 function twoSum(nums, target) {
   let comp = new Map();
-  let len = nums.length;
-
-  for (let i = 0; i < len; i++) {
-    if (comp[nums[i]] >= 0) {
-             return [comp[nums[i]], i];
+  for(let i=0;i<nums.length;i++){
+    console.log(comp[i],i);
+    if(comp[nums[i]]>=0) {
+      return [comp[nums[i]],i];
     }
-    comp[target - nums[i]] = i;
+    else{
+      comp[target-nums[i]] = i;
+    }
   }
 }
-console.log(twoSum(nums, 9))
+console.log(twoSum(nums, 11))
