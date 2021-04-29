@@ -6,9 +6,6 @@ function reverse(x)
 {   
     
     let res=0;
-    let count =0;
-    let position=0;
-    let base_value=10;
     let negative = false;
     if(x<0)
     {
